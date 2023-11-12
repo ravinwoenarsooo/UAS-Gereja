@@ -7,13 +7,10 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <header class="text-gray-400 bg-gray-900 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" bis_skin_checked="1">
+    <header class="text-black bg-orange-300 body-font">
+        <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center" bis_skin_checked="1">
             <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Tailblocks</span>
+                <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-16 rounded-full">
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a class="mr-5 hover:text-white">First Link</a>
@@ -21,7 +18,7 @@
                 <a class="mr-5 hover:text-white">Third Link</a>
                 <a class="mr-5 hover:text-white">Fourth Link</a>
             </nav>
-            <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+            <button class="inline-flex items-center bg-orange-00 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -36,58 +33,11 @@
     <footer class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
             <div class="flex flex-wrap md:text-left text-center order-first" bis_skin_checked="1">
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked="1">
-                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav class="list-none mb-10">
-                    <li>
-                        <a class="text-gray-400 hover:text-white">First Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Second Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Third Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked="1">
-                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav class="list-none mb-10">
-                    <li>
-                        <a class="text-gray-400 hover:text-white">First Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Second Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Third Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked="1">
-                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav class="list-none mb-10">
-                    <li>
-                        <a class="text-gray-400 hover:text-white">First Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Second Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Third Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked="1">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-left text-white mb-20">Paroki Pamulang
+                <br class="hidden sm:block">Gereja St.
+                <br class="hidden sm:block">Barnabas
+            </h1>
+                <!-- <div class="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked="1">
                     <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
                     <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start" bis_skin_checked="1">
                     <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2" bis_skin_checked="1">
@@ -99,15 +49,13 @@
                     <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
                     <br class="lg:block hidden">waistcoat green juice
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="bg-gray-800 bg-opacity-75" bis_skin_checked="1">
             <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col" bis_skin_checked="1">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
+                    <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-10 h-10 rounded-full">
                 </a>
                 <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">Copyright © 2023</p>
                 <p class="text-sm text-gray-400 font-bold sm:ml-6 sm:mt-0 mt-4">Komsos St.Barnabas Pamulang</p>
