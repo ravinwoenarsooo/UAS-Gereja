@@ -7,18 +7,19 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <header class="text-black bg-orange-300 body-font">
+    <header class="text-black bg-yellow-50 body-font">
         <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center" bis_skin_checked="1">
             <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
                 <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-16 rounded-full">
             </a>
+            <span class="ml-3 text-xl font-bold ">Paroki Santo Barnabas</span>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-white">First Link</a>
-                <a class="mr-5 hover:text-white">Second Link</a>
-                <a class="mr-5 hover:text-white">Third Link</a>
-                <a class="mr-5 hover:text-white">Fourth Link</a>
+                <a class="mr-5 hover:text-black">First Link</a>
+                <a class="mr-5 hover:text-black">Second Link</a>
+                <a class="mr-5 hover:text-black">Third Link</a>
+                <a class="mr-5 hover:text-black">Fourth Link</a>
             </nav>
-            <button class="inline-flex items-center bg-orange-00 border-0 py-1 px-3 focus:outline-none hover:bg-orange-200 hover:text-black rounded text-base mt-4 md:mt-0">Home
+            <button class="inline-flex items-center bg-orange-00 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-300 hover:text-black rounded text-base mt-4 md:mt-0">Home
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -30,7 +31,7 @@
         @yield('content')
     </main>
 
-    <footer class="text-gray-400 bg-orange-300 body-font">
+    <footer class="text-gray-400 bg-stone-800 body-font">
         <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
             <div class="flex flex-wrap md:text-left text-center order-first" bis_skin_checked="1">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-left text-white mb-20">Paroki Pamulang
@@ -52,7 +53,7 @@
                 </div> -->
             </div>
         </div>
-        <div class="bg-orange-100 bg-opacity-75" bis_skin_checked="1">
+        <div class="bg-white" bis_skin_checked="1">
             <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col" bis_skin_checked="1">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                     <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-10 h-10 rounded-full">
