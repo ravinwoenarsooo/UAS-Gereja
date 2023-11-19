@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/ravin', function () {
     return view('ravin');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+// Route::get('/ravin', function () {
+//     return view('ravin');
+// });
 
 Auth::routes();
 

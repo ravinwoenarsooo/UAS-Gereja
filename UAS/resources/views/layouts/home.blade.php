@@ -10,20 +10,16 @@
     <header class="text-black bg-yellow-50 body-font">
         <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center" bis_skin_checked="1">
             <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-16 rounded-full">
+                <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-14 my-1 rounded-full">
             </a>
             <span class="ml-3 text-xl font-bold ">Paroki Santo Barnabas</span>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-black">First Link</a>
+                <!-- <a class="mr-5 hover:text-black">First Link</a>
                 <a class="mr-5 hover:text-black">Second Link</a>
                 <a class="mr-5 hover:text-black">Third Link</a>
-                <a class="mr-5 hover:text-black">Fourth Link</a>
+                <a class="mr-5 hover:text-black">Fourth Link</a> -->
             </nav>
-            <button class="inline-flex items-center bg-orange-00 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-300 hover:text-black rounded text-base mt-4 md:mt-0">Home
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
+            <a href="/login" class="inline-flex items-center bg-orange-00 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-300 hover:text-black rounded text-base mt-4 md:mt-0">Admin</></a>
         </div>
     </header>
 
@@ -58,7 +54,7 @@
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                     <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-10 h-10 rounded-full">
                 </a>
-                <p class="text-sm text-black sm:ml-6 sm:mt-0 mt-4">Copyright © 2023</p>
+                <p class="text-sm text-black sm:ml-6 sm:mt-0 mt-4">&copy; {{ date('Y') }}</p>
                 <p class="text-sm text-black font-bold sm:ml-6 sm:mt-0 mt-4">Komsos St.Barnabas Pamulang</p>
                 <p class="text-sm text-black sm:ml-6 sm:mt-0 mt-4">All Right Reserved.</p>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
