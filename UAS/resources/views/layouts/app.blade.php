@@ -22,7 +22,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" style="max-width: 50px; height: auto; margin-right: 10px;">
-                    Gereja Katolik Santo Barnabas
+                    Paroki Santo Barnabas Pamulang
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
