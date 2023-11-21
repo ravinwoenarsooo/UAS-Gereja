@@ -13,7 +13,7 @@
             <div class="p-2 flex flex-row items-center justify-between">
                 <a href="/" class="flex items-center">
                     <img src="{{ asset('images/paroki.png') }}" alt="Logo" class="h-16 w-auto mr-2">
-                    <span class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Paroki Santo Barnabas Pamulang</span>
+                    <span class="text-lg font-semibold text-gray-900 rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Paroki Santo Barnabas Pamulang</span>
                 </a>
                 <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
