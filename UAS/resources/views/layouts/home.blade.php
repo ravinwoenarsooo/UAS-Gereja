@@ -10,7 +10,7 @@
 <body>
     <header class="text-black bg-yellow-50">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-            <div class="p-4 flex flex-row items-center justify-between">
+            <div class="p-2 flex flex-row items-center justify-between">
                 <a href="/" class="flex items-center">
                     <img src="{{ asset('images/paroki.png') }}" alt="Logo" class="h-16 w-auto mr-2">
                     <span class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Paroki Santo Barnabas Pamulang</span>
