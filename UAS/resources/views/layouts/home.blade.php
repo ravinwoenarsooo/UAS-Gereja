@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
 <body>
     <header class="text-black bg-yellow-50">
