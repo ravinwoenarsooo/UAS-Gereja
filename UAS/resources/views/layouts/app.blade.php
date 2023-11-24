@@ -21,8 +21,8 @@
         <nav class="navbar navbar-expand-md navbar-light" style="background-color: #FBF4DF; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" style="max-width: 50px; height: auto; margin-right: 10px;">
-                    Paroki Santo Barnabas Pamulang
+                    <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" style="max-width: 50px; height: auto; margin-right: 10px;">
+                    <!-- <span>Paroki Santo Barnabas Pamulang</span> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
