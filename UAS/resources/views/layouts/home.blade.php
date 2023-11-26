@@ -8,7 +8,7 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <header class="text-black bg-yellow-50">
+    <header class="text-black bg-yellow-50 sticky top-0">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div class="p-2 flex flex-row items-center justify-between">
                 <a href="/" class="flex items-center">
@@ -60,40 +60,22 @@
     </main>
 
     <footer class="text-gray-400 bg-stone-800 body-font">
-    <div class="py-8 flex flex-wrap -mb-10 md:text-left text-white order-first md:w-1/2 w-full ml-4">
-                    <div class="md:w-1/2 w-full px-4">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-left text-white mb-20">
-                    Paroki Pamulang
+        <div class="py-8 flex flex-wrap -mb-10 md:text-left text-white order-first md:w-1/2 w-full ml-4">
+            <div class="md:w-1/2 w-full px-4">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-left text-white mb-20">
+                Paroki Pamulang
                     <br>Gereja St.
                     <br>Barnabas
                 </h1>
-                    </div>
-                    <div class="md:w-1/2 w-full px-4">
-                        
-                    <p class="text-4xl font-bold">Lokasi Gereja</p>
-                        <nav class="list-none mb-10">
-                            Gereja St. Agustinus <br className='md:hidden block' />
-                            Jl. Prambanan Raya No.1, <br className='md:hidden block' />
-                            RT.001/RW.012, Cibodas Baru, <br className='md:hidden block' />
-                            Kec. Cibodas, Kota Tangerang, Banten 15138
-                        </nav>
-                    </div>
-                </div>
-
-
-                <!-- <div class="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked="1">
-                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
-                    <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start" bis_skin_checked="1">
-                    <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2" bis_skin_checked="1">
-                        <label for="footer-field" class="leading-7 text-sm text-gray-400">Placeholder</label>
-                        <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                    <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-                    </div>
-                    <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
-                    <br class="lg:block hidden">waistcoat green juice
-                    </p>
-                </div> -->
+            </div>
+            <div class="md:w-1/2 w-full px-4">    
+                <p class="text-4xl font-bold">Lokasi Gereja</p>
+                <nav class="list-none mb-10">
+                    St. Barnabas <br className='md:hidden block' />
+                    Jl. Moh. Toha No.3, <br className='md:hidden block' />
+                    RT.002/RW.005, Pd. Cabe Udik, <br className='md:hidden block' />
+                    Kec. Pamulang, Kota Tangerang Selatan, Banten 15418
+                </nav>
             </div>
         </div>
         <div class="bg-white" bis_skin_checked="1">
@@ -131,6 +113,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('ravin');
+    return view('home');
 });
 
 Route::get('/login', function () {
@@ -23,7 +23,7 @@ Route::get('/login', function () {
 });
 
 Route::get('/profile', function () {
-    return view('robertus');
+    return view('profile');
 });
 // Route::get('/ravin', function () {
 //     return view('ravin');
