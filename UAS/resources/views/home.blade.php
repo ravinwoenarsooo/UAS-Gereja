@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="default-carousel" class="relative z-0" data-carousel="static">
-<section class="text-black body-font" style="background-image: url('{{ asset('/images/image_5.svg') }}'); background-size: cover;">
+<section class="text-black body-font" style="background-image: url('{{ asset('/images/image_5.svg') }}'); background-size: cover; ">
     <div class="container px-10 py-54 mx-auto z-0">
         <div class="max-w-xs mx-auto z-0">
             <div class="overflow-hidden relative h-screen rounded-lg sm:h-screen xl:h-screen 2xl:h-screen">
