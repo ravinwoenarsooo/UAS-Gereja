@@ -8,7 +8,7 @@ class WartaParokiController extends Controller
     public function show()
     {
         // Retrieve the latest WartaParoki instance
-        $wartaParoki = WartaParoki::latest()->first();
+        $wartaParoki = WartaParoki::all();
 
         return view('home', compact('wartaParoki'));
     }

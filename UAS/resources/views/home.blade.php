@@ -173,14 +173,17 @@
                 <p class="lg:w-1/2 w-full leading-relaxed text-black text-opacity-90">Selamat datang di edisi terbaru Warta Paroki Santo Barnabas! Dalam bulan yang penuh berkat ini, kami ingin berbagi berbagai kegiatan dan peristiwa yang mengisi hidup berjemaat. Gereja Santo Barnabas terus menjadi tempat yang penuh kasih dan rohaniah, menginspirasi umat untuk hidup dalam iman dan pelayanan.</p>
             </div>
             <div class="flex flex-wrap -m-4">
+                @foreach($wartaParoki as $wartaParoki)
                 <div class="xl:w-1/4 md:w-1/2 p-4">
                     <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                         <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                         <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">{{ $wartaParoki->TanggalUpload }}</h3>
                         <h2 class="text-lg text-white font-medium title-font mb-4">{{ $wartaParoki->Judul }}</h2>
-                        <p class="leading-relaxed text-base">{{ $wartaParoki->Isi }}.</p>
+                        <p class="leading-relaxed text-base">{{ Str::limit($wartaParoki->Isi, 25) }}</p>
                     </div>
                 </div>
+                @endforeach
+            </div>  
         </div>
     </div>
 </section>
