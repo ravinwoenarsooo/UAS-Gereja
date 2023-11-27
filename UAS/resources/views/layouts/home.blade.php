@@ -55,7 +55,7 @@
         </div>
     </header>
 
-    <main class="py-0">
+    <main class="py-0" style="background-color: #FAFBDF;">
         @yield('content')
     </main>
 
