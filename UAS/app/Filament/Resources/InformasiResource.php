@@ -29,7 +29,7 @@ class InformasiResource extends Resource
             ->schema([
                 TextInput::make('Judul')->required(),
                 DateTimePicker::make('TanggalUpload')->required(),
-                Textarea::make('Isi')->maxLength(1000)->required(),
+                Textarea::make('Isi')->required(),
             ]);
     }
 

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WartaParokiController;
+use App\Http\Controllers\FOController;
 
 
 /*
@@ -16,7 +16,7 @@ use App\Http\Controllers\WartaParokiController;
 |
 */
 
-Route::get('/', [WartaParokiController::class, 'show'])->name('home');
+Route::get('/', [FOController::class, 'show'])->name('home');
 
 Route::get('/login', function () {
     return view('login');
@@ -29,5 +29,6 @@ Route::get('/profile', function () {
 //     return view('ravin');
 // });
 
-Auth::routes();
+Route::get('/show-data', [FOController::class, 'show'])->name('show.data');
 
+Auth::routes();

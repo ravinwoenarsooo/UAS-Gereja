@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('Judul');
             $table->date('TanggalUpload');
-            $table->string('Isi');
-            $table->binary('attachment');
+            $table->text('Isi');
+            $table->binary('attachment')->nullable();
             $table->timestamps();
         });
     }
