@@ -69,7 +69,7 @@
                 </h1>
             </div>
             <div class="md:w-1/2 w-full px-4">    
-                <p class="text-4xl font-bold">Lokasi Gereja</p>
+            <p class="text-4xl font-bold mb-4">Lokasi Gereja</p>
                 <nav class="list-none mb-10">
                     St. Barnabas <br className='md:hidden block' />
                     Jl. Moh. Toha No.3, <br className='md:hidden block' />
@@ -78,7 +78,7 @@
                 </nav>
             </div>
         </div>
-        <div class="bg-white" bis_skin_checked="1">
+        <div class="bg-[url('/public/images/background-nav.svg')]" bis_skin_checked="1">
             <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col" bis_skin_checked="1">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                     <img src="{{ asset('images/paroki.png') }}" alt="Paroki Logo" class="w-10 h-10 rounded-full">
