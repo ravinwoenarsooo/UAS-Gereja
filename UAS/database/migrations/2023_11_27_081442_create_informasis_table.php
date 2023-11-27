@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('informasis', function (Blueprint $table) {
             $table->id();
+            $table->string("Judul")->required();
+            $table->date('TanggalUpload')->required();
+            $table->text('Isi')->required();
             $table->timestamps();
         });
     }

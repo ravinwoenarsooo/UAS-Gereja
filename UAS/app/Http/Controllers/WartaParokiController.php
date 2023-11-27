@@ -8,7 +8,6 @@ class WartaParokiController extends Controller
 {
     public function show()
     {
-        // Retrieve the latest WartaParoki instance
         $wartaParoki = WartaParoki::all();
         $infoPentingCollection = Informasi::all();
 

@@ -3,10 +3,9 @@
 @section('content')
 <div id="default-carousel" class="relative z-0" data-carousel="static">
 <section class="text-black bg-white body-font">
+<!-- style="background-image: url('/images/Gereja.png'); background-size: cover; background-position: center;"> -->
     <div class="container px-5 py-24 mx-auto z-0">
         <div class="max-w-2xl mx-auto z-0">
-            
-        
             <div class="overflow-hidden relative h-screen rounded-lg sm:h-screen xl:h-screen 2xl:h-screen">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
