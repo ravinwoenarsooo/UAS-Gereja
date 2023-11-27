@@ -8,7 +8,7 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <header class="text-black bg-yellow-50 sticky top-0">
+    <header class="text-black bg-[url('/public/images/background-nav.svg')] sticky top-0 z-30">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div class="p-2 flex flex-row items-center justify-between">
                 <a href="/" class="flex items-center">
