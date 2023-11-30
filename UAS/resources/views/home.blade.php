@@ -48,15 +48,15 @@
         </div>
         <div class="flex flex-wrap" bis_skin_checked="1">
             @foreach($infoPentingCollection as $infoSingle)
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800" bis_skin_checked="1">
-                    <h2 class="text-lg sm:text-xl text-black font-medium title-font mb-2">{{ $infoSingle->Judul }}</h2>
-                    <p class="leading-relaxed text-base mb-4">{{ Str::limit($infoSingle->Isi, 25) }}</p>
-                    <a href="{{ route('informasi-penting.show', ['id' => (string)$infoSingle->id]) }}" class="text-indigo-400 inline-flex items-center">Lihat Informasi
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-orange-300 bg-opacity-40 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ asset('images/BannerIF.png') }}" alt="content">
+                    <h3 class="tracking-widest text-black text-xs font-medium title-font">{{ $infoSingle->TanggalUpload }}</h3>
+                    <h2 class="text-lg text-black font-medium title-font mb-4">{{ $infoSingle->Judul }}</h2>
+                    <p class="leading-relaxed text-base mb-2">{{ Str::limit($infoSingle->Isi, 25) }}</p>
+                    <a href="{{ route('informasi-penting.show', ['id' => (string)$infoSingle->id]) }}" class="px-3 py-2 text-xs font-medium text-center text-black bg-white rounded-lg hover:bg-black hover:text-white">Lihat Informasi</a>
                 </div>
+            </div>
             @endforeach
             
             @if($infoPentingCollection->isEmpty())
@@ -79,17 +79,17 @@
         <div class="flex flex-wrap -m-4">
             @forelse($wartaParoki as $item)
             <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <div class="bg-orange-300 bg-opacity-40 p-6 rounded-lg">
                     <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ asset('images/BannerWP.png') }}" alt="content">
                     <h3 class="tracking-widest text-black text-xs font-medium title-font">{{ $item->TanggalUpload }}</h3>
-                    <h2 class="text-lg text-white font-medium title-font mb-4">{{ $item->Judul }}</h2>
-                    <p class="leading-relaxed text-base">{{ Str::limit($item->Isi, 25) }}</p>
-                    <a href="{{ route('warta-paroki.show', ['id' => (string)$item->id]) }}" class="text-black inline-flex items-center">Lihat Informasi</a>
+                    <h2 class="text-lg text-black font-medium title-font mb-4">{{ $item->Judul }}</h2>
+                    <p class="leading-relaxed text-base mb-2">{{ Str::limit($item->Isi, 25) }}</p>
+                    <a href="{{ route('warta-paroki.show', ['id' => (string)$item->id]) }}" class="px-3 py-2 text-xs font-medium text-center text-black bg-white rounded-lg hover:bg-black hover:text-white">Lihat Warta Paroki</a>
                 </div>
             </div>
             @empty
             <div class="w-full flex justify-center">
-                <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <div class="bg-orange-300 bg-opacity-40 p-6 rounded-lg">
                     <p class="text-white">Warta Paroki belum diunggah!</p>
                 </div>
             </div>
