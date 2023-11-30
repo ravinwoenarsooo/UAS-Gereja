@@ -24,4 +24,15 @@ class FOController extends Controller
 
         return view('warta-paroki.show', compact('wartaParoki'));
     }
+
+    public function showinfo($id)
+    {
+        $infoPentingCollection = Informasi::find($id);
+
+        if($infoPentingCollection === null){
+            return abort(404);
+        }
+
+        return view('informasi-penting.show', compact('infoPentingCollection'));
+    }
 }
