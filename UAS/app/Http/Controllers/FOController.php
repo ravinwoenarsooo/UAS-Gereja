@@ -11,8 +11,17 @@ class FOController extends Controller
         $wartaParoki = WartaParoki::all();
         $infoPentingCollection = Informasi::all();
 
-        
-
         return view('home', compact('wartaParoki', 'infoPentingCollection'));
+    }
+
+    public function showdetails($id)
+    {
+        $wartaParoki = WartaParoki::find($id);
+
+        if ($wartaParoki === null){
+            return abort(404);
+        }
+
+        return view('warta-paroki.show', compact('wartaParoki'));
     }
 }

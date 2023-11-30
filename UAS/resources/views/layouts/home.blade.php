@@ -59,7 +59,7 @@
         @yield('content')
     </main>
 
-    <footer class="text-gray-400 bg-stone-800 body-font">
+    <footer class="text-gray-400 bg-stone-800 body-font bottom-0 w-full">
         <div class="py-8 flex flex-wrap -mb-10 md:text-left text-white order-first md:w-1/2 w-full ml-4">
             <div class="md:w-1/2 w-full px-4">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-left text-white mb-20">

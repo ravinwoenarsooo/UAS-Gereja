@@ -30,5 +30,6 @@ Route::get('/profile', function () {
 // });
 
 Route::get('/show-data', [FOController::class, 'show'])->name('show.data');
+Route::get('/warta-paroki/{id}', [FOController::class,'showdetails'])->name('warta-paroki.show');
 
 Auth::routes();
