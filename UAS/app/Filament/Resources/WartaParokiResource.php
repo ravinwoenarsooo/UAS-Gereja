@@ -31,7 +31,7 @@ class WartaParokiResource extends Resource
                 TextInput::make('Judul')->required(),
                 DateTimePicker::make('TanggalUpload')->required(),
                 Textarea::make('Isi')->required(),
-                FileUpload::make('attachment')->nullable(),
+                // FileUpload::make('attachment')->nullable(),
             ]);
     }
 

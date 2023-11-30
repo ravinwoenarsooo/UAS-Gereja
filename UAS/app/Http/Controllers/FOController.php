@@ -18,7 +18,7 @@ class FOController extends Controller
     {
         $wartaParoki = WartaParoki::find($id);
 
-        if ($wartaParoki === null){
+        if($wartaParoki === null){
             return abort(404);
         }
 

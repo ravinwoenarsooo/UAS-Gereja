@@ -81,14 +81,18 @@
             <div class="xl:w-1/4 md:w-1/2 p-4">
                 <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                     <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ asset('images/BannerWP.png') }}" alt="content">
-                    <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">{{ $item->TanggalUpload }}</h3>
+                    <h3 class="tracking-widest text-black text-xs font-medium title-font">{{ $item->TanggalUpload }}</h3>
                     <h2 class="text-lg text-white font-medium title-font mb-4">{{ $item->Judul }}</h2>
                     <p class="leading-relaxed text-base">{{ Str::limit($item->Isi, 25) }}</p>
-                    <a href="{{ route('warta-paroki.show', ['id' => (string)$item->id]) }}" class="text-indigo-400 inline-flex items-center">Lihat Informasi</a>
+                    <a href="{{ route('warta-paroki.show', ['id' => (string)$item->id]) }}" class="text-black inline-flex items-center">Lihat Informasi</a>
                 </div>
             </div>
             @empty
-                <p>Tidak ada warta paroki yang diunggah.</p>
+            <div class="w-full flex justify-center">
+                <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                    <p class="text-white">Warta Paroki belum diunggah!</p>
+                </div>
+            </div>
             @endforelse
 
         </div>  
