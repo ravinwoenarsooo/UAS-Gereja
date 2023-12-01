@@ -23,9 +23,9 @@
                 </button>
             </div>
             <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-                <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
-                <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Portfolio</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">Home</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/profile">Profil</a>
+                <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a> -->
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
@@ -69,13 +69,16 @@
                 </h1>
             </div>
             <div class="md:w-1/2 w-full px-4">    
-            <p class="text-4xl font-bold mb-4">Lokasi Gereja</p>
+            <a href="https://www.google.com/maps/place/Saint+Barnabas+Catholic+Church,+Pamulang/@-6.348557,106.7476011,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x2e69ef0c62f22ac9:0x7f8b5476db79fc14!2sSaint+Barnabas+Catholic+Church,+Pamulang,+Jl.+Moh.+Toha+No.3,+RT.002%2FRW.005,+Pondok+Cabe+Udik,+Pamulang,+South+Tangerang+City,+Banten+15418!2m2!1d106.7502397!2d-6.3485621!3m5!1s0x2e69ef0c62f22ac9:0x7f8b5476db79fc14!8m2!3d-6.3485623!4d106.750176!16s%2Fg%2F1pzq1l0n9?entry=ttu" target="_blank">
+                <button class="text-4xl font-bold mb-4">Lokasi Gereja</button>
+                
                 <nav class="list-none mb-10">
                     St. Barnabas <br className='md:hidden block' />
                     Jl. Moh. Toha No.3, <br className='md:hidden block' />
                     RT.002/RW.005, Pd. Cabe Udik, <br className='md:hidden block' />
                     Kec. Pamulang, Kota Tangerang Selatan, Banten 15418
                 </nav>
+                </a>
             </div>
         </div>
         <div class="bg-[url('/public/images/background-nav.svg')]" bis_skin_checked="1">
@@ -87,26 +90,15 @@
                 <p class="text-sm text-black font-bold sm:ml-6 sm:mt-0 mt-4">Komsos St.Barnabas Pamulang</p>
                 <p class="text-sm text-black sm:ml-6 sm:mt-0 mt-4">All Right Reserved.</p>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                    <a href="#" class="text-black">
+                    <a href="https://www.youtube.com/@KomsosBarnabas" class="ml-3 text-black">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            <path d="M23.2 7.6s-.2-1.6-1-2.3c-.9-1-1.9-1-2.4-1.1C17.4 4 12 4 12 4s-5.4 0-7.8.2c-.5 0-1.5.1-2.4 1.1C.8 6 .8 7.6.8 7.6s-.2 1.7-.2 3.4v1.8c0 1.7.2 3.4.2 3.4s.2 1.6 1 2.3c.9 1 2 1 2.5 1.1 1.8.2 7.5.2 7.5.2s5.4 0 7.8-.2c.5 0 1.5-.1 2.4-1.1.7-.8 1-2.3 1-2.3s.2-1.7.2-3.4v-1.8c0-1.7-.2-3.4-.2-3.4zM9.5 15.8V8.8l6.7 3.5-6.7 3.5z"></path>
                         </svg>
                     </a>
-                    <a href="#" class="ml-3 text-black">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="ml-3 text-black">
+                    <a href="https://www.instagram.com/komsossantobarnabas/" class="ml-3 text-black">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="ml-3 text-black">
-                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
                         </svg>
                     </a>
                 </span>
@@ -114,4 +106,5 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </html>
