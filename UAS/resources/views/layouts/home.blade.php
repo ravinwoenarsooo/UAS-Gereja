@@ -71,13 +71,14 @@
             <div class="md:w-1/2 w-full px-4">    
             <a href="https://www.google.com/maps/place/Saint+Barnabas+Catholic+Church,+Pamulang/@-6.348557,106.7476011,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x2e69ef0c62f22ac9:0x7f8b5476db79fc14!2sSaint+Barnabas+Catholic+Church,+Pamulang,+Jl.+Moh.+Toha+No.3,+RT.002%2FRW.005,+Pondok+Cabe+Udik,+Pamulang,+South+Tangerang+City,+Banten+15418!2m2!1d106.7502397!2d-6.3485621!3m5!1s0x2e69ef0c62f22ac9:0x7f8b5476db79fc14!8m2!3d-6.3485623!4d106.750176!16s%2Fg%2F1pzq1l0n9?entry=ttu" target="_blank">
                 <button class="text-4xl font-bold mb-4">Lokasi Gereja</button>
-                </a>
+                
                 <nav class="list-none mb-10">
                     St. Barnabas <br className='md:hidden block' />
                     Jl. Moh. Toha No.3, <br className='md:hidden block' />
                     RT.002/RW.005, Pd. Cabe Udik, <br className='md:hidden block' />
                     Kec. Pamulang, Kota Tangerang Selatan, Banten 15418
                 </nav>
+                </a>
             </div>
         </div>
         <div class="bg-[url('/public/images/background-nav.svg')]" bis_skin_checked="1">
