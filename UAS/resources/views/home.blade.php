@@ -60,8 +60,8 @@
             
             @if($infoPentingCollection->isEmpty())
                 <div class="w-full flex justify-center">
-                    <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                        <p class="text-white">Tidak ada Informasi Penting!</p>
+                    <div class="bg-orange-300 bg-opacity-40 p-6 rounded-lg font-bold border border-amber-900">
+                        <p class="text-black">Tidak ada Informasi Penting!</p>
                     </div>
                 </div>
             @endif
@@ -88,8 +88,8 @@
             </div>
             @empty
             <div class="w-full flex justify-center">
-                <div class="bg-orange-300 bg-opacity-40 p-6 rounded-lg">
-                    <p class="text-white">Warta Paroki belum diunggah!</p>
+                <div class="bg-orange-300 bg-opacity-40 p-6 rounded-lg font-bold border border-amber-900">
+                    <p class="text-black">Tidak ada Warta Paroki!</p>
                 </div>
             </div>
             @endforelse
