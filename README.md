@@ -1,1 +1,0 @@
-# UAS-Gereja
