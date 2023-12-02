@@ -1,0 +1,26 @@
+{
+  "public/images/background-nav.svg": {
+    "file": "assets/background-nav-27d0cf73.svg",
+    "src": "public/images/background-nav.svg"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-90ca0d2c.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/background-nav-27d0cf73.svg"
+    ],
+    "css": [
+      "assets/app-90ca0d2c.css"
+    ],
+    "file": "assets/app-da432128.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-fabb6531.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  }
+}
